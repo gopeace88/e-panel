@@ -1,4 +1,5 @@
 // 분전반 더미 데이터
+// 기준일: 2025-12-02
 
 export const panels = {
   'A-001': {
@@ -9,9 +10,9 @@ export const panels = {
     location: '1도크 A구역',
     floor: '1층',
     building: '선박건조동',
-    installDate: '2022-03-15',
-    lastInspection: '2024-11-15',
-    nextInspection: '2025-02-15',
+    installDate: '2023-03-15',
+    lastInspection: '2025-11-15',
+    nextInspection: '2026-02-15',
     status: '정상',
     circuitCount: 24,
     activeCircuits: 22,
@@ -29,9 +30,9 @@ export const panels = {
       humidity: 45
     },
     history: [
-      { date: '2024-11-15', type: '정기점검', result: '정상', inspector: '김철수' },
-      { date: '2024-08-20', type: '정기점검', result: '정상', inspector: '이영희' },
-      { date: '2024-05-10', type: '고장수리', result: '완료', inspector: '박민수', note: '차단기 교체' }
+      { date: '2025-11-15', type: '정기점검', result: '정상', inspector: '김철수' },
+      { date: '2025-08-20', type: '정기점검', result: '정상', inspector: '이영희' },
+      { date: '2025-05-10', type: '고장수리', result: '완료', inspector: '박민수', note: '차단기 교체' }
     ]
   },
   'A-015': {
@@ -42,9 +43,9 @@ export const panels = {
     location: '1도크 B구역',
     floor: '2층',
     building: '선박건조동',
-    installDate: '2022-05-20',
-    lastInspection: '2024-10-28',
-    nextInspection: '2025-01-28',
+    installDate: '2023-05-20',
+    lastInspection: '2025-10-28',
+    nextInspection: '2026-01-28',
     status: '정상',
     circuitCount: 32,
     activeCircuits: 30,
@@ -62,8 +63,8 @@ export const panels = {
       humidity: 48
     },
     history: [
-      { date: '2024-10-28', type: '정기점검', result: '정상', inspector: '김철수' },
-      { date: '2024-07-15', type: '정기점검', result: '정상', inspector: '이영희' }
+      { date: '2025-10-28', type: '정기점검', result: '정상', inspector: '김철수' },
+      { date: '2025-07-15', type: '정기점검', result: '정상', inspector: '이영희' }
     ]
   },
   'B-003': {
@@ -74,9 +75,9 @@ export const panels = {
     location: '2도크 C구역',
     floor: '1층',
     building: '블록조립동',
-    installDate: '2021-08-10',
-    lastInspection: '2024-11-01',
-    nextInspection: '2025-02-01',
+    installDate: '2022-08-10',
+    lastInspection: '2025-11-01',
+    nextInspection: '2026-02-01',
     status: '정상',
     circuitCount: 48,
     activeCircuits: 45,
@@ -94,9 +95,9 @@ export const panels = {
       humidity: 42
     },
     history: [
-      { date: '2024-11-01', type: '정기점검', result: '정상', inspector: '박민수' },
-      { date: '2024-08-05', type: '정기점검', result: '정상', inspector: '김철수' },
-      { date: '2024-04-20', type: '정기점검', result: '경미한 이상', inspector: '이영희', note: '단자 조임 필요' }
+      { date: '2025-11-01', type: '정기점검', result: '정상', inspector: '박민수' },
+      { date: '2025-08-05', type: '정기점검', result: '정상', inspector: '김철수' },
+      { date: '2025-04-20', type: '정기점검', result: '경미한 이상', inspector: '이영희', note: '단자 조임 필요' }
     ]
   },
   'B-015': {
@@ -107,9 +108,9 @@ export const panels = {
     location: '2도크 D구역',
     floor: '2층',
     building: '블록조립동',
-    installDate: '2020-12-05',
-    lastInspection: '2024-09-20',
-    nextInspection: '2024-12-20',
+    installDate: '2021-12-05',
+    lastInspection: '2025-09-20',
+    nextInspection: '2025-12-20',
     status: '고장',
     circuitCount: 36,
     activeCircuits: 32,
@@ -128,14 +129,14 @@ export const panels = {
     },
     fault: {
       type: 'L2상 결상',
-      detected: '2024-11-28 14:35',
+      detected: '2025-12-01 14:35',
       severity: '긴급',
       description: 'L2상 전압 감지 불가, 즉시 점검 필요'
     },
     history: [
-      { date: '2024-11-28', type: '고장발생', result: '수리대기', inspector: '시스템', note: 'L2상 결상 감지' },
-      { date: '2024-09-20', type: '정기점검', result: '정상', inspector: '박민수' },
-      { date: '2024-06-15', type: '정기점검', result: '정상', inspector: '김철수' }
+      { date: '2025-12-01', type: '고장발생', result: '수리대기', inspector: '시스템', note: 'L2상 결상 감지' },
+      { date: '2025-09-20', type: '정기점검', result: '정상', inspector: '박민수' },
+      { date: '2025-06-15', type: '정기점검', result: '정상', inspector: '김철수' }
     ]
   },
   'C-001': {
@@ -146,9 +147,9 @@ export const panels = {
     location: '3도크 E구역',
     floor: '1층',
     building: '도장동',
-    installDate: '2023-02-28',
-    lastInspection: '2024-08-10',
-    nextInspection: '2024-11-10',
+    installDate: '2024-02-28',
+    lastInspection: '2025-09-10',
+    nextInspection: '2025-11-10',
     status: '점검필요',
     circuitCount: 24,
     activeCircuits: 24,
@@ -167,12 +168,12 @@ export const panels = {
     },
     warning: {
       type: '정기점검 기한 초과',
-      dueDate: '2024-11-10',
+      dueDate: '2025-11-10',
       description: '정기점검 예정일이 지났습니다. 빠른 점검이 필요합니다.'
     },
     history: [
-      { date: '2024-08-10', type: '정기점검', result: '정상', inspector: '이영희' },
-      { date: '2024-05-05', type: '정기점검', result: '정상', inspector: '박민수' }
+      { date: '2025-09-10', type: '정기점검', result: '정상', inspector: '이영희' },
+      { date: '2025-06-05', type: '정기점검', result: '정상', inspector: '박민수' }
     ]
   },
   'C-008': {
@@ -183,9 +184,9 @@ export const panels = {
     location: '3도크 F구역',
     floor: '3층',
     building: '도장동',
-    installDate: '2023-06-15',
-    lastInspection: '2024-11-20',
-    nextInspection: '2025-02-20',
+    installDate: '2024-06-15',
+    lastInspection: '2025-11-20',
+    nextInspection: '2026-02-20',
     status: '정상',
     circuitCount: 16,
     activeCircuits: 14,
@@ -203,8 +204,8 @@ export const panels = {
       humidity: 40
     },
     history: [
-      { date: '2024-11-20', type: '정기점검', result: '정상', inspector: '김철수' },
-      { date: '2024-08-25', type: '정기점검', result: '정상', inspector: '이영희' }
+      { date: '2025-11-20', type: '정기점검', result: '정상', inspector: '김철수' },
+      { date: '2025-08-25', type: '정기점검', result: '정상', inspector: '이영희' }
     ]
   }
 }
