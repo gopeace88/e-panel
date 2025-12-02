@@ -291,12 +291,13 @@ const handleNfcReading = ({ message, serialNumber }) => {
 }
 
 // 시리얼 번호를 분전반 ID로 변환 (데모용)
+// 테스트 모드: 모든 NFC 태그를 등록된 분전반 중 하나로 매핑
+const testPanelIds = ['A-001', 'A-015', 'B-003', 'B-015', 'C-001', 'C-008']
+
 const convertSerialToId = (serial) => {
-  // 시리얼 번호의 마지막 4자리를 사용하여 ID 생성
-  const lastFour = serial.replace(/:/g, '').slice(-4).toUpperCase()
-  const prefix = ['A', 'B', 'C'][parseInt(lastFour[0], 16) % 3]
-  const num = parseInt(lastFour.slice(-3), 16) % 100
-  return `${prefix}-${String(num).padStart(3, '0')}`
+  // 시리얼 번호의 해시값으로 테스트 분전반 선택
+  const hash = serial.replace(/:/g, '').split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)
+  return testPanelIds[hash % testPanelIds.length]
 }
 
 // NFC 읽기 에러 처리
