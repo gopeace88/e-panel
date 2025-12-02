@@ -1,0 +1,13 @@
+Frontend
+-        Framework : Vue.js 3
+-        Runtime : Node.js 16.20
+-        Package Manager : npm
+-        Bundler : Vite
+-        UI Layer : Vuetify
+-        Axios 기반 REST API 연동
+
+Backend
+A.     Language : Java 11, 17
+B.      Framework : Spring Boot 2.6.3
+C.      DB 접근 : MyBatis
+D.     빌드 도구 : Maven 3.6.3
